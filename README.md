@@ -18,7 +18,7 @@ cleos push action producerjson set '{"owner":"your_account", "json": "your_json"
 
 **Example**:
 ```
-cleos push action producerjson set '{"owner":"teamgreymass", "json": "'`printf %q $(cat bp.json)`'"}' -p teamgreymass@active
+cleos push action producerjson set '{"owner":"teamgreymass", "json": "'`printf %q $(cat bp.json | tr -d "\r")`'"}' -p teamgreymass@active
 ```
 
 ### Remove from the table
